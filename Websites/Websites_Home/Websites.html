@@ -1,0 +1,145 @@
+<!--Telling the browser that the document is an HTML document-->
+<!DOCTYPE html>
+<!--Telling the browser that the document is an HTML document and that the language is English and the direction is left to right-->
+<html lang="en" dir="ltr">
+<head>
+  <!--Telling the browser to use the UTF-8 character set-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Telling the browser to use the width of the device and to scale the page to 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--A meta tag that tells the browser to use the light mode-->
+  <meta name="color-scheme" content="light only">
+  <!--Page Icon-->
+  <link rel="icon" type="image/ico" href="Websites_Page.png" sizes="16x16">
+  <!--Page Title-->
+  <title>Websites</title>
+  <!--Importing the css file-->
+  <link rel="stylesheet" href="Website_style.css">
+  <!--Font Awesome Import-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!--Open Preview Module Import-->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!--Import searchbar element-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
+</head>
+<body>
+  <!--Background-->
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <!--Dark Background-->
+  <div class="dark-b-container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+  <!--Image To Text-->
+  <div class="search-elements">
+   <div class="container">
+    <input type="search" id="searchBar" placeholder="Search for your product...">
+    <div class="contenent">
+    <div id="box">
+      <div id="preview-toggle" class="toggle">
+        <i class="bx bx-help-circle"></i>
+      </div>
+      <div id="editor">
+        <h2>Image To Text</h2>
+        <img src="Image To Text.png" alt="image/png">
+        <div>
+          <a href="./Image To Text/Image To Text.html">Click here to go to the site.</a>
+        </div>
+      </div>
+      <div id="preview" class="hidden">
+        <div id="preview-close" class="toggle">
+          <i class="bx bx-x"></i>
+        </div>
+        <h1>Instructions</h1><br>
+        <p>
+          <div class="center">
+            <strong>Attention: This only works with screenshots.</strong><br><br>
+          </div>
+          <strong>1)</strong> Resize your image which contains the text.<br><br>
+          <strong>2)</strong> If your image contains any background remove it, except the white color.<br><br>
+          <strong>3)</strong> Insert the edited image.<br><br>
+          <strong>4)</strong> Wait for the text to be extracted and copy it.
+        </p>
+      </div>
+      <div id="box-cover"></div>
+    </div>
+    <!--Emoji Eyes Follow Cursor-->
+    <div id="box-2">
+      <div id="preview-toggle-2" class="toggle-2">
+        <i class="bx bx-help-circle"></i>
+      </div>
+      <div id="editor-2">
+        <h2>Emoji eyes follow cursor</h2>
+        <img src="Cursor Follow Eyes emoji/Emoji_Cursor_logo.webp" alt="image/webp">
+        <div>
+          <a href="./Cursor Follow Eyes emoji/Emoji_Cursor_Follow.html">Click here to go to the site.</a>
+        </div>
+      </div>
+      <div id="preview-2" class="hidden-2">
+        <div id="preview-close-2" class="toggle-2">
+          <i class="bx bx-x"></i>
+        </div>
+        <h1>Instructions</h1><br>
+        <p>
+          <strong>1)</strong> Enter the website.<br><br>
+          <strong>2)</strong> Drag the slider and enjoy !!.
+        </p>
+      </div>
+      <div id="box-cover-2"></div>
+    </div>
+    <!--Calculator-->
+    <div id="box-3">
+      <div id="preview-toggle-3" class="toggle-3">
+        <i class="bx bx-help-circle"></i>
+      </div>
+      <div id="editor-3">
+        <h2>Calculator</h2>
+        <img src="Calculator/Calculator_Icon.png" alt="image/png">
+        <div>
+          <a href="./Calculator/Calculator.html">Click here to go to the site.</a>
+        </div>
+      </div>
+      <div id="preview-3" class="hidden-3">
+        <div id="preview-close-3" class="toggle-3">
+          <i class="bx bx-x"></i>
+        </div>
+        <h1>Instructions</h1><br>
+        <p>
+          <strong>1)</strong> Enter the website.<br><br>
+          <strong>2)</strong> Solve your questions !!.
+        </p>
+      </div>
+      <div id="box-cover-3"></div>
+    </div>
+    <!--Animate Background-->
+    <div id="box-4">
+      <div id="editor-4">
+        <h2>Animate Background</h2>
+        <img src="Animate Background/Animate_Icon.png" alt="image/png">
+        <div>
+          <a href="./Animate Background/Animate Background.html">Click here to go to the site.</a>
+        </div>
+      </div>
+      <div id="box-cover-4"></div>
+    </div>
+      <!--Password Generator-->
+      <div id="box-5">
+        <div id="editor-5">
+          <h2>Password Generator</h2>
+          <img src="Pass_Generator_Icon.png" alt="image/png">
+          <div>
+            <a href="./Password Generator/Password_Generator.html">Click here to go to the site.</a>
+          </div>
+        </div>
+        <div id="box-cover-5"></div>
+      </div>
+    </div>
+</div>
+</body>
+<script src="Website_Functions.js"></script>
+</html

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Inter:wght@400;700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body
+{
+    font-family: 'Exo 2',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(58, 71, 100);
+    background: linear-gradient(45deg, rgb(0, 217, 255) 0%, rgb(255, 145, 0));
+    background-repeat: round;
+}
+
+.container
+{
+    background-color: #fff;
+    min-width: 400px;
+    min-height: 600px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 10px gray;
+    overflow: hidden;
+}
+
+#display
+{
+    font-size: 35px;
+    color: #fff;
+    text-align: right;
+    background-color: #5f47c1;
+    padding: 35px 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.buttons
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: 1;
+    min-height: 100px;
+    background-color: #eee;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 600;
+    color: #444;
+    box-shadow: 0 0 2px gray;
+}
+
+.button:hover
+{
+    color: #000;
+    background-color: #ffc400;
+    transition: all .3s ease-in-out;
+}
+
+.span
+{
+    grid-column: 2 span;
+}
+
+@media (max-width: 1024px)
+{
+    body
+    {
+        width: auto;
+    }
+    
+    .container
+    {
+        width: 100%;
+        min-height: 300px;
+    }
+}

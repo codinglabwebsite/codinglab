@@ -1,0 +1,85 @@
+<!--Telling the browser that the document is an HTML document-->
+<!DOCTYPE html>
+<!--Telling the browser that the document is an HTML document and that the language is English and the direction is left to right-->
+<html lang="en" dir="ltr">
+<head>
+  <!--Telling the browser to use the UTF-8 character set-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Telling the browser to use the width of the device and to scale the page to 1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--A meta tag that tells the browser to use the light mode-->
+  <meta name="color-scheme" content="light only">
+  <!--Page Icon-->
+  <link rel="icon" type="image/ico" href="Python_Page_Icon.png" sizes="16x16">
+  <!--Page Title-->
+  <title>Python</title>
+  <!--Importing the css file-->
+  <link rel="stylesheet" href="Python_Page_style.css">
+  <!--Font Awesome Import-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!--Open Preview Module Import-->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!--Import searchbar element-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
+  <!--Background Import-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+    <!--Background-->
+    <div class="container-fluid">
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div> 
+        </div>
+    </div>
+    <!--Dark Background-->
+    <div class="dark-b-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    <!--Youtube to video-->
+    <div class="search-elements">
+        <div class="container">
+        <input type="search" id="searchBar" placeholder="Search for your product...">
+        <div class="contenent">
+            <div id="box">
+                <div id="preview-toggle" class="toggle">
+                    <i class="bx bx-help-circle"></i>
+                </div>
+                <div id="editor">
+                    <h2>Youtube to video</h2>
+                    <img src="Youtube to MP3.png" alt="image/png">
+                    <div>
+                        <a href="https://mega.nz/file/gaMkBLDZ#QEaN57GqZGLgKPaKVdmhZdktDcxACKj2svZbp-eb1QM">Click here to download the application.</a>
+                    </div>
+                </div>
+                <div id="preview" class="hidden">
+                    <div id="preview-close" class="toggle">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <h1>Instructions</h1>
+                    <p>
+                        <div class="center">
+                            <strong>This application is for PC only.</strong> <br><br>
+                        </div>
+                        <strong>1)</strong> Download the file. <br><br>
+                        <strong>2)</strong> Extract the zip file. <br><br>
+                        <strong>3)</strong> Copy the YouTube url (page link) and paste the url into the bar.<br><br>
+                        <strong>4)</strong> Press the "Enter" button, in your keyboard.<br><br>
+                        <strong>5)</strong> And finally the video will have downloaded to the folder where you placed the application.
+                    </p>
+                </div>
+                <div id="box-cover"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="Python_Page_Functions.js"></script>
+</body>
+</html>
