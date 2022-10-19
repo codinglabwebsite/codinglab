@@ -1,4 +1,4 @@
-/* Defining the variables */
+// Defining the variables for open menu
 let nav = document.querySelector(".nav-container");
 
 let menuOpenBtn = document.querySelector(".Container .bx-menu");
@@ -10,7 +10,7 @@ var audio_o = new Audio('Home/Home_Page/Open_Menu.mp3');
 var audio_c = new Audio('Home/Home_Page/Close_Menu.mp3')
 
 
-/*Open Menu when user click button*/
+// Open Menu when user click button
 menuOpenBtn.onclick = function()
 {
   audio_o.play();
@@ -24,48 +24,78 @@ menuCloseBtn.onclick = function()
 }
 
 
-/* Defining the variables */
+// Defining the variables for show list elements 
 let customWebArrow = document.querySelector(".CheckT");
 
 let jsArrow = document.querySelector(".CheckG");
 
-/*Open list when user click on menu buttons*/
+// Open list when user click on menu buttons */
 customWebArrow.onclick = function() 
 {
   nav.classList.toggle("show1");
 }
 
-/*Remove pc email links for mobile*/
+// -------------- Define All query elements ------------------------------
+
+// PC menu elements
+let Pc_L = document.querySelector(".PC_Link");
+let PC_L_1 = document.querySelector(".PC_Link_1");
+
+// Mobile menu Elements
+let MB_L = document.querySelector(".Mobile_Link");
+let MB_L_1 = document.querySelector(".Mobile_Link_1");
+
+// Mobile Pargraph
+let MB_p = document.querySelector(".Mobile_Paragraph");
+
+// PC Pargraph
+let PC_p = document.querySelector(".Pc_Paragraph");
+
+//When Click on Mobile menu Elements do margin 0 and padding 0
+MB_L.addEventListener('click', function()
+{
+  MB_L.style = "margin: 0; padding: 0;";
+});
+
+MB_L_1.addEventListener('click', function()
+{
+  MB_L_1.style = "margin: 0; padding: 0;";
+});
+
+//Remove pc elements when media query is active
 var x = window.matchMedia("(max-width: 1024px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+myFunction(x)
+x.addListener(myFunction)
 function myFunction(x)
 {
-    if (x.matches) 
-    { // If media query matches
-      document.querySelector(".PC_Link").style.display = "none";
-      document.querySelector(".PC_Link_1").style.display = "none";
-      document.querySelector(".Mobile_Link").style.display = "block";
-      document.querySelector(".Mobile_Link").onclick = function()
-      {
-        document.querySelector(".Mobile_Link").style = "padding: 0; margin: 0;";
-      };
-      document.querySelector(".Mobile_Link_1").style.display = "block";
-      document.querySelector(".Mobile_Link_1").onclick = function()
-      {
-        document.querySelector(".Mobile_Link_1").style = "padding: 0; margin: 0;";
-      };
-    } 
-    else 
-    {
-      document.querySelector(".Mobile_Link").style.display = "none";
-      document.querySelector(".Mobile_Link_1").style.display = "none";
-      document.querySelector(".PC_Link").style.display = "block";
-      document.querySelector(".PC_Link_1").style.display = "block";
-    }
+  if (x.matches)
+  {
+    //Remove Pc Elements
+    Pc_L.style.display = "none";
+    PC_L_1.style.display = "none";
+    PC_p.style.display = "none";
+
+    //Add Mobile Elements
+    MB_L.style.display = "block";
+    MB_L_1.style.display = "block";
+    MB_p.style.display = "block";
+  }
+
+  else
+  {
+    //Remove Mobile Elements
+    MB_L.style.display = "none";
+    MB_L_1.style.display = "none";
+    MB_p.style.display = "none";
+
+    //Add Pc Elements
+    Pc_L.style.display = "block";
+    PC_L_1.style.display = "block";
+    PC_p.style.display = "block";
+  }
 }
 
-//Loading Function
+//Loading
 window.onload = function()
 {
 	setTimeout(function()
@@ -74,7 +104,7 @@ window.onload = function()
 	  loader.className="loader fadeout";
 	  setTimeout(function()
     {
-      loader.style.display="none"
+      loader.style.display="none";
     },2200);
 	},2200);
 };
