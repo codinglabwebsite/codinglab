@@ -160,6 +160,10 @@ body, html
   text-shadow: 0 0 10px red;
 }
 
+.dark-b-container
+{
+  transition: .3s;
+}
 
 /*Background*/
 #stars
