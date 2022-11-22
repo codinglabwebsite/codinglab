@@ -51,6 +51,10 @@ let MB_p = document.querySelector(".Mobile_Paragraph");
 // PC Pargraph
 let PC_p = document.querySelector(".Pc_Paragraph");
 
+//Stars move with device orentation
+const background = document.querySelector(".dark-b-container");
+const move = 3;
+
 //When Click on Mobile menu Elements do margin 0 and padding 0
 MB_L.addEventListener('click', function()
 {
@@ -79,6 +83,18 @@ function myFunction(x)
     MB_L.style.display = "block";
     MB_L_1.style.display = "block";
     MB_p.style.display = "block";
+
+    //Gyroscope Backgorund
+    const handleMotion = e => 
+    {
+      const x = Math.round(e.accelerationIncludingGravity.x) * move;
+      const y = Math.round(e.accelerationIncludingGravity.y) * move;
+      const z = Math.round(e.accelerationIncludingGravity.z) * move;
+      
+      background.style.transform = `translate3d(${-x}px, ${y}px, ${z}px)`;
+    }
+
+    window.addEventListener("devicemotion", handleMotion, true);
   }
 
   else
@@ -92,6 +108,18 @@ function myFunction(x)
     Pc_L.style.display = "block";
     PC_L_1.style.display = "block";
     PC_p.style.display = "block";
+
+    //Gyroscope Backgorund
+    const handleMotion = e => 
+    {
+      const x = Math.round(e.accelerationIncludingGravity.x) * move;
+      const y = Math.round(e.accelerationIncludingGravity.y) * move;
+      const z = Math.round(e.accelerationIncludingGravity.z) * move;
+      
+      background.style.transform = `translate3d(0px, 0px, 0px)`;
+    }
+
+    window.addEventListener("devicemotion", handleMotion, true);
   }
 }
 
