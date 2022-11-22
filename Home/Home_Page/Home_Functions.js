@@ -53,7 +53,7 @@ let PC_p = document.querySelector(".Pc_Paragraph");
 
 //Stars move with device orentation
 const background = document.querySelector(".dark-b-container");
-const move = 3;
+const move = 5;
 
 //When Click on Mobile menu Elements do margin 0 and padding 0
 MB_L.addEventListener('click', function()
