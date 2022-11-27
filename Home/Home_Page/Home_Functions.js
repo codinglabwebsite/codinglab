@@ -115,7 +115,7 @@ function myFunction(x)
       background.style.transform = `translate3d(0px, 0px, 0px)`;
     }
 
-    window.addEventListener("devicemotion", handleMotion, true);
+    window.addEventListener("devicemotion", handleMotion, false);
   }
 }
 
