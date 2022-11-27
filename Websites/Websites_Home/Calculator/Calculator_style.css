@@ -54,7 +54,6 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: 1;
     min-height: 100px;
     background-color: #eee;
     border: 1px solid #fff;
