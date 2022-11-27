@@ -1,5 +1,5 @@
 // Defining the variables for open menu
-let nav = document.querySelector(".nav-container");
+const nav = document.querySelector(".nav-container");
 
 let menuOpenBtn = document.querySelector(".Container .bx-menu");
 
