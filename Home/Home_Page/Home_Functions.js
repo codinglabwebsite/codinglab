@@ -14,7 +14,7 @@ var audio_c = new Audio('Home/Home_Page/Close_Menu.mp3')
 menuOpenBtn.onclick = function()
 {
   audio_o.play();
-  nav.style.left = "0";
+  nav.style.left = "0%";
 }
 
 menuCloseBtn.onclick = function()
