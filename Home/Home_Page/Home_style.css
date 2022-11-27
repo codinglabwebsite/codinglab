@@ -813,7 +813,7 @@ img
     position: relative;
     display: block;
     margin-left: 0%;
-    margin-top: 75%;
+    top: 50%;
     width: 100%;
     height: auto;
     border-radius: 4%;
