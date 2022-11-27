@@ -29,7 +29,7 @@ body, html
 .fadeout 
 {
 	opacity: 0;
-	filter: alpha(opacity=0);
+	filter: alpha(opacity = 0);
 }
 
 @-webkit-keyframes fadeInDown
