@@ -15,6 +15,8 @@
         <meta name="google-site-verification" content="2_svStkUNPV5tD_n4DKa9RM8EDdvcn8cX8xTzbj4q2Y"/>
         <!-- Arrow Import Package -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!--Import Js Code For 3D Model Viewer-->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <!-- Social Media Icons -->
         <script src="https://kit.fontawesome.com/d5d570c910.js" crossorigin="anonymous"></script>
         <!-- Page Icon -->
@@ -92,8 +94,11 @@
                         <li>
                             <a class="Mobile_Link_1" href="mailto:codinglab130@gmail.com?subject=Feedback" title="Feedback">Feedback</a>
                         </li>
-                        <!-- Image -->
-                        <img src="Home/Home_Page/Image.jpg" alt="image/jpg" onclick="return false;" title="Image">
+                        <model-viewer title="3D Model" src="Home/Home_Page/Logo_3D.glb" ar ar-modes="webxr scene-viewer quick-look" shadow-intensity="2" exposure="0.5" shadow-softness="0" min-camera-orbit="0deg 0deg 6.904m" max-camera-orbit="0deg 68deg auto" min-field-of-view="30deg" camera-target="2.3m 0m 0m" class="view">
+                            <div class="progress-bar hide" slot="progress-bar">
+                                <div class="update-bar"></div>
+                            </div>
+                        </model-viewer>
                     </ul>
                 </div>
             </div>
